@@ -18,6 +18,6 @@ int main(void)
    
     gettimeofday(&stop, NULL);
     double secs = (double)(stop.tv_usec - start.tv_usec) / 1000000 + (double)(stop.tv_sec - start.tv_sec);
-    printf("memset took %6.9f\n", secs);
+    printf("memset took %6.6f\n", secs);
     
 }
